@@ -4,7 +4,7 @@
   <repo quality="experimental" status="unofficial">
     <name>deepin</name>
     <description>Gentoo overlay for Deepin APPs</description>
-    <homepage>https://github.com/zhtengw/deepin-overlay</homepage>
+    <homepage>https://github.com/ppphp/deepin-overlay</homepage>
     <owner type="project">
       <email>atenzd@gmail.com</email>
       <name>aten</name>
