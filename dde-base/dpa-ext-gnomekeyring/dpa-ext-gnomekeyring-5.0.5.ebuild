@@ -17,7 +17,7 @@ IUSE=""
 
 RDEPEND="dev-qt/qtcore:5
 		dev-qt/qtwidgets:5
-		gnome-base/libgnome-keyring
+		app-crypt/libsecret
 		dde-base/dde-polkit-agent
 		"
 DEPEND="${RDEPEND}
