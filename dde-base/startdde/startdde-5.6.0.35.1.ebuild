@@ -19,7 +19,7 @@ inherit golang-vcs-snapshot
 
 DESCRIPTION="starter of Deepin Desktop Environment"
 HOMEPAGE="https://github.com/linuxdeepin/startdde"
-SRC_URI="https://github.com/linuxdeepin/${PN}/archive/5b68557edbe3321d0082b11d7cd3007e0711f0c0.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/linuxdeepin/${PN}/archive/master.tar.gz -> ${P}.tar.gz
 		${EGO_VENDOR_URI}"
 
 RESTRICT="mirror"
@@ -74,9 +74,9 @@ src_compile() {
 }
 
 src_unpack () {
-	mkdir -p $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde/
-	tar -xvf $DISTDIR/${P}.tar.gz -C $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde/
-	mv $WORKDIR/startdde-{master,5.6.0.35.1}
+	mkdir -p $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/
+	tar -xvf $DISTDIR/${P}.tar.gz -C $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/
+	mv $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde-{master,}
 }
 
 src_install() {
