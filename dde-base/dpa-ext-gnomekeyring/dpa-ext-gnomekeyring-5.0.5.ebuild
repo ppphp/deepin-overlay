@@ -4,7 +4,7 @@
 
 EAPI=7
 
-inherit qmake-utils
+inherit cmake-utils
 
 DESCRIPTION="GNOME keyring extension for dde-polkit-agent"
 HOMEPAGE="https://github.com/linuxdeepin/dpa-ext-gnomekeyring"
@@ -23,17 +23,16 @@ RDEPEND="dev-qt/qtcore:5
 DEPEND="${RDEPEND}
 		"
 
-src_prepare() {
-
-	LIBDIR=$(get_libdir)
-	sed -i "s|/usr/lib/|/usr/${LIBDIR}/|g" ${PN}.pro
-	QT_SELECT=qt5 eqmake5	PREFIX=/usr
-	default_src_prepare
-}
-
 src_unpack () {
 	tar -xvf $DISTDIR/${P}.tar.gz -C $WORKDIR
 	mv $WORKDIR/dpa-ext-gnomekeyring-{master,5.0.5}
+}
+
+src_configure() {
+	local mycmakeargs=(
+		-DVERSION=${PV}
+	)
+	cmake-utils_src_configure
 }
 
 src_install() {
