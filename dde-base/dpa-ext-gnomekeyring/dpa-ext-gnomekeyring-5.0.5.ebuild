@@ -31,6 +31,10 @@ src_prepare() {
 	default_src_prepare
 }
 
+src_unpack () {
+	echo $DISTDIR $WORKDIR
+}
+
 src_install() {
 		emake INSTALL_ROOT=${D} install
 }
