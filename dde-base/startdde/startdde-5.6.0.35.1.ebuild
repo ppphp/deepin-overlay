@@ -76,7 +76,7 @@ src_compile() {
 src_unpack () {
 	mkdir -p $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/
 	tar -xvf $DISTDIR/${P}.tar.gz -C $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/
-	mv $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde-{master,}
+	mv $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde{-master,}
 }
 
 src_install() {
