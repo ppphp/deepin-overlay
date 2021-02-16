@@ -19,7 +19,7 @@ inherit golang-vcs-snapshot
 
 DESCRIPTION="starter of Deepin Desktop Environment"
 HOMEPAGE="https://github.com/linuxdeepin/startdde"
-SRC_URI="https://github.com/linuxdeepin/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/linuxdeepin/${PN}/archive/5b68557edbe3321d0082b11d7cd3007e0711f0c0.tar.gz -> ${P}.tar.gz
 		${EGO_VENDOR_URI}"
 
 RESTRICT="mirror"
@@ -36,7 +36,6 @@ RDEPEND=">=dde-base/dde-daemon-5.9.0
 
 DEPEND="${RDEPEND}
 		app-crypt/libsecret
-		gnome-base/gnome-keyring
 		dev-lang/coffee-script
 		app-misc/ddcutil
 		>=dev-go/go-gir-generator-2.0.0
@@ -72,6 +71,11 @@ src_prepare() {
 src_compile() {
 	cd ${S}/src/${EGO_PN}
 	default_src_compile
+}
+
+src_unpack () {
+	tar -xvf $DISTDIR/${P}.tar.gz -C $WORKDIR
+	mv $WORKDIR/startdde-{master,5.6.0.35.1}
 }
 
 src_install() {
