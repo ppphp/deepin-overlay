@@ -32,7 +32,8 @@ src_prepare() {
 }
 
 src_unpack () {
-	echo $DISTDIR $WORKDIR
+	tar -xvf $DISTDIR/${P}.tar.gz -C $WORKDIR
+	mv $WORKDIR/dpa-ext-gnomekeyring-{master,5.0.5}
 }
 
 src_install() {
