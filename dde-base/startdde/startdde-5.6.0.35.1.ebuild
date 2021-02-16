@@ -36,6 +36,7 @@ RDEPEND=">=dde-base/dde-daemon-5.9.0
 
 DEPEND="${RDEPEND}
 		app-crypt/libsecret
+		gnome-base/gnome-keyring
 		dev-lang/coffee-script
 		app-misc/ddcutil
 		>=dev-go/go-gir-generator-2.0.0
