@@ -70,12 +70,12 @@ src_prepare() {
 
 src_compile() {
 	cd ${S}/src/${EGO_PN}
-	emake
+	default_src_compile
 }
 
 src_install() {
 	cd ${S}/src/${EGO_PN}
-	emake DESTDIR="${D}" install
+	default_src_install
 
 	rm -r ${D}/etc/X11/
 
