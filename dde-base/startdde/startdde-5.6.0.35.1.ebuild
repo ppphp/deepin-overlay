@@ -79,6 +79,18 @@ src_unpack () {
 	# default_src_unpack
 	mv $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde{-master,}
 	# mv $WORKDIR/startdde-{master,5.6.0.35.1}
+	default_src_unpack
+	#mkdir -p github.com/{godbus/,golang.org/x,github.com/davecgh,github.com/cryptix,github.com/fsnotify}
+	#tar -xvf ${DISTDIR}/github.com-godbus-dbus-e0a146e.tar.gz -C 
+
+#"golang.org/x/net aaf60122140d3fcf75376d319f0554393160eb50 github.com/golang/net"
+#"golang.org/x/xerrors 9bdfabe github.com/golang/xerrors"
+#"github.com/davecgh/go-spew 87df7c6"
+#"github.com/cryptix/wav 8bdace674401f0bd3b63c65479b6a6ff1f9d5e44"
+#"github.com/godbus/dbus e0a146e"
+#"github.com/fsnotify/fsnotify 7f4cf4d"
+#"golang.org/x/sys cc9327a github.com/golang/sys"
+
 }
 
 src_install() {
