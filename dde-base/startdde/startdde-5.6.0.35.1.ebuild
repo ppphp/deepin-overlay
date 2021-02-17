@@ -78,7 +78,7 @@ src_unpack () {
 	mkdir -p $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/
 	mv $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde{-master,}
 	# mv $WORKDIR/startdde-{master,5.6.0.35.1}
-	mkdir -p ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/{godbus/,golang.org/x,github.com/davecgh,github.com/cryptix,github.com/fsnotify}
+	mkdir -p ${PORTAGE_BUILDDIR}/temp/golibdir/src/{github.com/godbus/,golang.org/x,github.com/davecgh,github.com/cryptix,github.com/fsnotify}
 	tar -xvf ${DISTDIR}/github.com-godbus-dbus-e0a146e.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/godbus
 	tar -xvf ${DISTDIR}/github.com-cryptix-wav-8bdace674401f0bd3b63c65479b6a6ff1f9d5e44.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/cryptix
 	tar -xvf ${DISTDIR}/github.com-davecgh-go-spew-87df7c6.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/davecgh
