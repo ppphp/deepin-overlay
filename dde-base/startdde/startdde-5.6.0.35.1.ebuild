@@ -79,21 +79,21 @@ src_unpack () {
 	mv $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde{-master,}
 	# mv $WORKDIR/startdde-{master,5.6.0.35.1}
 	mkdir -p ${PORTAGE_BUILDDIR}/temp/golibdir/src/{github.com/godbus/,golang.org/x,github.com/davecgh,github.com/cryptix,github.com/fsnotify}
-	tar -xvf ${DISTDIR}/github.com-godbus-dbus-e0a146e.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/godbus
-	tar -xvf ${DISTDIR}/github.com-cryptix-wav-8bdace674401f0bd3b63c65479b6a6ff1f9d5e44.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/cryptix
-	tar -xvf ${DISTDIR}/github.com-davecgh-go-spew-87df7c6.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/davecgh
-	tar -xvf ${DISTDIR}/github.com-fsnotify-fsnotify-7f4cf4d.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/fsnotify
-	tar -xvf ${DISTDIR}/github.com-golang-net-aaf60122140d3fcf75376d319f0554393160eb50.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x
-	tar -xvf ${DISTDIR}/github.com-golang-sys-cc9327a.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x
-	tar -xvf ${DISTDIR}/github.com-golang-xerrors-9bdfabe.tar.gz -C {PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x
+	tar -xvf ${DISTDIR}/github.com-godbus-dbus-e0a146e.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/godbus
+	tar -xvf ${DISTDIR}/github.com-cryptix-wav-8bdace674401f0bd3b63c65479b6a6ff1f9d5e44.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/cryptix
+	tar -xvf ${DISTDIR}/github.com-davecgh-go-spew-87df7c6.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/davecgh
+	tar -xvf ${DISTDIR}/github.com-fsnotify-fsnotify-7f4cf4d.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/fsnotify
+	tar -xvf ${DISTDIR}/github.com-golang-net-aaf60122140d3fcf75376d319f0554393160eb50.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x
+	tar -xvf ${DISTDIR}/github.com-golang-sys-cc9327a.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x
+	tar -xvf ${DISTDIR}/github.com-golang-xerrors-9bdfabe.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x
 
-	mv {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/godbus/{dbus*,dbus}
-	mv {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/cryptix/{wav*,wav}
-	mv {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/davecgh/{go-spew*,gospew}
-	mv {PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/fsnotify/{fsnotify*,fsnotify}
-	mv {PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{net*,net}
-	mv {PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{sys*,sys}
-	mv {PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{xerrors*,xerrors}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/godbus/{dbus*,dbus}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/cryptix/{wav*,wav}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/davecgh/{go-spew*,gospew}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/fsnotify/{fsnotify*,fsnotify}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{net*,net}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{sys*,sys}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{xerrors*,xerrors}
 }
 
 src_install() {
