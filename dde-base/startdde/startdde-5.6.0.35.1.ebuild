@@ -89,7 +89,7 @@ src_unpack () {
 
 	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/godbus/{dbus*,dbus}
 	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/cryptix/{wav*,wav}
-	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/davecgh/{go-spew*,gospew}
+	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/davecgh/{go-spew*,go-spew}
 	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/fsnotify/{fsnotify*,fsnotify}
 	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{net*,net}
 	mv ${PORTAGE_BUILDDIR}/temp/golibdir/src/golang.org/x/{sys*,sys}
