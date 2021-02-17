@@ -76,7 +76,7 @@ src_compile() {
 src_unpack () {
 	default_src_unpack
 	mkdir -p $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/
-	mv $WORKDIR/startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde{-master,}
+	mv $WORKDIR/{startdde-master,startdde-5.6.0.35.1/src/pkg.deepin.io/dde/startdde}
 	# mv $WORKDIR/startdde-{master,5.6.0.35.1}
 	mkdir -p ${PORTAGE_BUILDDIR}/temp/golibdir/src/{github.com/godbus/,golang.org/x,github.com/davecgh,github.com/cryptix,github.com/fsnotify}
 	tar -xvf ${DISTDIR}/github.com-godbus-dbus-e0a146e.tar.gz -C ${PORTAGE_BUILDDIR}/temp/golibdir/src/github.com/godbus
