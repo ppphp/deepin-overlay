@@ -83,8 +83,6 @@ src_prepare() {
 		dde-desktop/main.cpp \
 		dde-zone/mainwindow.h || die
 
-	sed -i "s/m_waitControl/this->m_waitControl/g" dde-wallpaper-chooser/frame.cpp
-
 	export QT_SELECT=qt5
 	eqmake5 PREFIX=/usr VERSION=${PV} DEFINES+="VERSION=${PV} OF=_Z_OF" LIB_INSTALL_DIR=/usr/$(get_libdir) DISABLE_SCREENSAVER=$(use screensaver || echo YES) filemanager.pro || die
 	default_src_prepare
