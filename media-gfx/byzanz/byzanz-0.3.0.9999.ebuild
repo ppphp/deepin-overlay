@@ -14,7 +14,7 @@ EGIT_REPO_URI="https://gitlab.gnome.org/Archive/byzanz.git"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND=">=x11-libs/libXdamage-1.0
