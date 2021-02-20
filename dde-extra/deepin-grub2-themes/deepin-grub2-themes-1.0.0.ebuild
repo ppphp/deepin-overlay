@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/linuxdeepin/deepin-grub2-themes"
 SRC_URI="https://github.com/linuxdeepin/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="CC-BY-SA-4.0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 SLOT="0"
 IUSE=""
 
