@@ -33,19 +33,19 @@ src_prepare() {
 		schedule-plugin/src/widget/modifyscheduleitem.cpp \
 		schedule-plugin/src/widget/scheduleitemwidget.cpp || die
 	sed -i "/\#include\ <DMenu>/a\#include\ <QMouseEvent>" \
-		src/view/draginfographicsview.cpp || die
+		calendar-client/src/view/draginfographicsview.cpp || die
 	sed -i "/\#include\ <QEvent>/a\#include\ <QWheelEvent>" \
-		src/widget/weekWidget/weekheadview.cpp \
-		src/widget/dayWidget/daymonthview.cpp || die
+		calendar-client/src/widget/weekWidget/weekheadview.cpp \
+		calendar-client/src/widget/dayWidget/daymonthview.cpp || die
 	sed -i "/\#include\ <D/a\#include\ <QPainterPath>" \
 		schedule-plugin/src/widget/itemwidget.cpp \
-		src/customWidget/customframe.cpp || die
+		calendar-client/src/customWidget/customframe.cpp || die
 	sed -i "/\#include\ <QPainter>/a\#include\ <QPainterPath>\n\#include\ <QMouseEvent>" \
-		src/widget/dayWidget/daymonthview.cpp \
-		src/widget/schedulesearchview.cpp || die
+		calendar-client/src/widget/dayWidget/daymonthview.cpp \
+		calendar-client/src/widget/schedulesearchview.cpp || die
 	sed -i "/\#include\ <QPainter>/a\#include\ <QPainterPath>" \
-		src/widget/yearWidget/yearview.cpp \
-		src/widget/weekWidget/weekheadview.cpp || die
+		calendar-client/src/widget/yearWidget/yearview.cpp \
+		calendar-client/src/widget/weekWidget/weekheadview.cpp || die
 	cmake-utils_src_prepare
 }
 
