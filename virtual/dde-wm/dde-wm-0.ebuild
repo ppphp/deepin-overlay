@@ -6,7 +6,7 @@ EAPI=7
 DESCRIPTION="Virtual for DDE Window Manager"
 
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64"
 IUSE="mutter kwin +minimal"
 REQUIRED_USE="|| ( mutter kwin minimal )
 			?? ( mutter kwin )"
