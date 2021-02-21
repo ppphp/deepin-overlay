@@ -5,11 +5,11 @@ EAPI=7
 
 PYTHON_COMPAT=( python3_{6,7,8} )
 
-inherit distutils-r1 gnome2-utils versionator
+inherit distutils-r1 gnome2-utils
 
 DESCRIPTION="An onscreen keyboard useful for tablet PC users and for mobility impaired users"
 HOMEPAGE="https://launchpad.net/onboard"
-SRC_URI="https://launchpad.net/${PN}/$(get_version_component_range 1-2)/${PV}/+download/${P}.tar.gz"
+SRC_URI="https://launchpad.net/${PN}/$(ver_cut 1-2)/${PV}/+download/${P}.tar.gz"
 
 # po/* are licensed under BSD 3-clause
 LICENSE="GPL-3+ BSD"
