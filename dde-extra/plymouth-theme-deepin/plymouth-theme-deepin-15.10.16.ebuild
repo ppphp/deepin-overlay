@@ -7,7 +7,7 @@ DESCRIPTION="Deepin theme for Plymouth"
 HOMEPAGE="https://github.com/linuxdeepin/plymouth-theme-deepin"
 SRC_URI="https://github.com/linuxdeepin/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="LGPL-3+"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 SLOT="0"
 IUSE=""
 

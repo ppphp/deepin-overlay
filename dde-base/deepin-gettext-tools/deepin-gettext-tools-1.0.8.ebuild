@@ -6,7 +6,7 @@ EAPI=7
 
 inherit eutils
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 
 DESCRIPTION="Deepin Internationalization utilities"
 HOMEPAGE="https://github.com/linuxdeepin/deepin-gettext-tools"

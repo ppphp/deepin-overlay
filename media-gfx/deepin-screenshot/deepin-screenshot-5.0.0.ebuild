@@ -12,10 +12,10 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="develop"
 	SRC_URI=""
 	#KEYWORDS=""
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="amd64 ~x86"
 else
 	SRC_URI="https://github.com/linuxdeepin/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="amd64 ~x86"
 fi
 
 DESCRIPTION="Snapshot tools for linux deepin."

@@ -15,7 +15,7 @@ SRC_URI="http://launchpad.net/${PN}/0.5/${PV}/+download/${P}.tar.gz"
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~ppc ~x86 ~x86-interix ~amd64-linux ~arm-linux ~x86-linux"
+KEYWORDS="~alpha amd64 ~arm ~ppc ~x86 ~x86-interix amd64-linux ~arm-linux ~x86-linux"
 IUSE="+introspection doc static-libs"
 
 RDEPEND="

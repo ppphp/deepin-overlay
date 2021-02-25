@@ -16,7 +16,7 @@ SRC_URI="${COMMON_URI}/${QQPN}/${QQPN}_${QQ_PV}_i386.deb"
 
 LICENSE="Tencent"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
 
 DEPEND=""

@@ -12,7 +12,7 @@ SRC_URI="https://github.com/linuxdeepin/${PN}/archive/${PV}.tar.gz -> ${P}.tar.g
 
 LICENSE="GPL-3+"
 SLOT="3"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="+mp3 +flac +ogg +aac"
 
 RDEPEND="dev-qt/qtmultimedia:5[gstreamer]

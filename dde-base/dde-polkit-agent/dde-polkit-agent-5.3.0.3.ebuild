@@ -13,7 +13,7 @@ SRC_URI="https://github.com/linuxdeepin/${PN}/archive/${PV}.tar.gz -> ${P}.tar.g
 #EGIT_REPO_URI="https://github.com/linuxdeepin/${PN}.git"
 #EGIT_COMMIT="3081c69"
 #EGIT_COMMIT="e8c80fb"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 
 LICENSE="GPL-3"
 SLOT="0"

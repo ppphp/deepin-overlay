@@ -13,7 +13,7 @@ if [[ "${PV}" == *9999* ]] ; then
 	EGIT_REPO_URI="https://github.com/linuxdeepin/${PN}.git"
 else
 	SRC_URI="https://github.com/linuxdeepin/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~x86 ~amd64"
+	KEYWORDS="~x86 amd64"
 fi
 
 LICENSE="GPL-3+"

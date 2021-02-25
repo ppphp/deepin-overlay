@@ -15,7 +15,7 @@ EGIT_REPO_URI="https://github.com/linuxdeepin/${PN}.git"
 EGIT_COMMIT="${PV}"
 EGIT_SUBMODULES=( cef )
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 LICENSE="LGPL-3"
 SLOT="0"
 IUSE=""

@@ -16,7 +16,7 @@ SRC_URI="${COMMON_URI}/${MY_PN}/${MY_PN}_${MY_PV}_i386.deb"
 
 LICENSE="Thunder"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
 
 DEPEND=""

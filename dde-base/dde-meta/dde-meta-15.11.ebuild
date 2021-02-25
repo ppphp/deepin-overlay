@@ -10,7 +10,7 @@ SRC_URI=""
 
 LICENSE="metapackage"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="+policykit manual +terminal multimedia grub plymouth elogind systemd turbo kwin mutter extra screensaver"
 REQUIRED_USE="^^ ( systemd elogind )
 			?? ( kwin mutter )"

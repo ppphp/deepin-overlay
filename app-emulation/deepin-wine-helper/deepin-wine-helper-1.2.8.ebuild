@@ -16,7 +16,7 @@ SRC_URI="${COMMON_URI}/deepin-wine-helper/deepin-wine-helper_${MY_PV}_i386.deb"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
 
 DEPEND=""

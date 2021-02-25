@@ -14,7 +14,7 @@ SRC_URI="https://launchpad.net/${PN}/$(ver_cut 1-2)/${PV}/+download/${P}.tar.gz"
 # po/* are licensed under BSD 3-clause
 LICENSE="GPL-3+ BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 
 COMMON_DEPEND="app-text/hunspell:=
 	dev-libs/dbus-glib

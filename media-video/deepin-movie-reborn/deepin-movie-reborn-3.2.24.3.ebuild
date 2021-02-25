@@ -17,7 +17,7 @@ fi
 
 LICENSE="GPL-3+"
 SLOT="3"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
 
 DEPEND="dev-qt/qtdbus:5
